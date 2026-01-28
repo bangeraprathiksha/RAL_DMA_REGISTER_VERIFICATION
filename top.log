@@ -1,0 +1,439 @@
+# vsim tb_top -voptargs="+acc=npr" -l top.log -c -do "run -all;quit;" 
+# Start time: 11:55:28 on Jan 28,2026
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: top_reg_block.sv(28): (vopt-2240) Treating stand-alone use of function 'set_coverage' as an implicit VOID cast.
+# ** Warning: top_reg_block.sv(33): (vopt-2240) Treating stand-alone use of function 'set_coverage' as an implicit VOID cast.
+# ** Warning: top_reg_block.sv(38): (vopt-2240) Treating stand-alone use of function 'set_coverage' as an implicit VOID cast.
+# ** Warning: top_reg_block.sv(43): (vopt-2240) Treating stand-alone use of function 'set_coverage' as an implicit VOID cast.
+# ** Warning: top_reg_block.sv(48): (vopt-2240) Treating stand-alone use of function 'set_coverage' as an implicit VOID cast.
+# ** Warning: top_reg_block.sv(53): (vopt-2240) Treating stand-alone use of function 'set_coverage' as an implicit VOID cast.
+# ** Warning: top_reg_block.sv(58): (vopt-2240) Treating stand-alone use of function 'set_coverage' as an implicit VOID cast.
+# ** Warning: top_reg_block.sv(63): (vopt-2240) Treating stand-alone use of function 'set_coverage' as an implicit VOID cast.
+# ** Warning: top_reg_block.sv(68): (vopt-2240) Treating stand-alone use of function 'set_coverage' as an implicit VOID cast.
+# ** Warning: top_reg_block.sv(73): (vopt-2240) Treating stand-alone use of function 'set_coverage' as an implicit VOID cast.
+# //  Questa Sim
+# //  Version 10.6c linux Jul 25 2017
+# //
+# //  Copyright 1991-2017 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.intf(fast)
+# Loading mtiUvm.uvm_pkg
+# Loading work.ral_pkg(fast)
+# Loading work.top_sv_unit(fast)
+# Loading work.tb_top(fast)
+# Loading work.intf(fast)
+# Loading work.dma_design(fast)
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# ** Warning: (vsim-3764) top_reg_seq.sv(230): Stand-alone call to function 'predict' treated as implicit void cast.
+#    Time: 0 ns  Iteration: 0  Region: /ral_pkg::ctrl_seq File: ral_pkg.sv
+# ** Warning: (vsim-3764) top_reg_seq.sv(303): Stand-alone call to function 'predict' treated as implicit void cast.
+#    Time: 0 ns  Iteration: 0  Region: /ral_pkg::io_addr_seq File: ral_pkg.sv
+# Loading /tools/mentor/questasim_10.6c/questasim/uvm-1.1d/linux/uvm_dpi.so
+# run -all
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(215) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(217) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# UVM_INFO @ 0: reporter [RNTST] Running test regression_test...
+# UVM_INFO top_reg_seq.sv(678) @ 0: uvm_test_top.e.ag.seqr@@seq [regression_seq] 
+# 
+# ================ regression start =================
+# 
+# 
+# UVM_INFO top_reg_seq.sv(53) @ 0: uvm_test_top.e.ag.seqr@@seq.rst_seq [reset_check_seq] 
+# 
+# ----------------------RESET CHECK START ---------------------------------------
+# 
+# 
+# UVM_INFO driver.sv(71) @ 45: uvm_test_top.e.ag.drv [DRV] System Reset
+# UVM_INFO monitor.sv(37) @ 65: uvm_test_top.e.ag.mon [MON]  WRITE addr=400 data=0
+# UVM_INFO driver.sv(45) @ 65: uvm_test_top.e.ag.drv [DRV] WRITE addr=400 data=0
+# UVM_INFO driver.sv(58) @ 95: uvm_test_top.e.ag.drv [DRV] READ addr=400 data=0
+# UVM_INFO monitor.sv(53) @ 95: uvm_test_top.e.ag.mon [MON]  READ addr=400 data=0
+# UVM_INFO monitor.sv(37) @ 115: uvm_test_top.e.ag.mon [MON]  WRITE addr=404 data=0
+# UVM_INFO driver.sv(45) @ 115: uvm_test_top.e.ag.drv [DRV] WRITE addr=404 data=0
+# UVM_INFO driver.sv(58) @ 145: uvm_test_top.e.ag.drv [DRV] READ addr=404 data=0
+# UVM_INFO monitor.sv(53) @ 145: uvm_test_top.e.ag.mon [MON]  READ addr=404 data=0
+# UVM_INFO monitor.sv(37) @ 165: uvm_test_top.e.ag.mon [MON]  WRITE addr=408 data=0
+# UVM_INFO driver.sv(45) @ 165: uvm_test_top.e.ag.drv [DRV] WRITE addr=408 data=0
+# UVM_INFO driver.sv(58) @ 195: uvm_test_top.e.ag.drv [DRV] READ addr=408 data=0
+# UVM_INFO monitor.sv(53) @ 195: uvm_test_top.e.ag.mon [MON]  READ addr=408 data=0
+# UVM_INFO monitor.sv(37) @ 215: uvm_test_top.e.ag.mon [MON]  WRITE addr=40c data=0
+# UVM_INFO driver.sv(45) @ 215: uvm_test_top.e.ag.drv [DRV] WRITE addr=40c data=0
+# UVM_INFO driver.sv(58) @ 245: uvm_test_top.e.ag.drv [DRV] READ addr=40c data=0
+# UVM_INFO monitor.sv(53) @ 245: uvm_test_top.e.ag.mon [MON]  READ addr=40c data=0
+# UVM_INFO monitor.sv(37) @ 265: uvm_test_top.e.ag.mon [MON]  WRITE addr=410 data=0
+# UVM_INFO driver.sv(45) @ 265: uvm_test_top.e.ag.drv [DRV] WRITE addr=410 data=0
+# UVM_INFO driver.sv(58) @ 295: uvm_test_top.e.ag.drv [DRV] READ addr=410 data=0
+# UVM_INFO monitor.sv(53) @ 295: uvm_test_top.e.ag.mon [MON]  READ addr=410 data=0
+# UVM_INFO driver.sv(58) @ 325: uvm_test_top.e.ag.drv [DRV] READ addr=414 data=0
+# UVM_INFO monitor.sv(53) @ 325: uvm_test_top.e.ag.mon [MON]  READ addr=414 data=0
+# UVM_INFO driver.sv(58) @ 355: uvm_test_top.e.ag.drv [DRV] READ addr=418 data=0
+# UVM_INFO monitor.sv(53) @ 355: uvm_test_top.e.ag.mon [MON]  READ addr=418 data=0
+# UVM_INFO monitor.sv(37) @ 375: uvm_test_top.e.ag.mon [MON]  WRITE addr=41c data=0
+# UVM_INFO driver.sv(45) @ 375: uvm_test_top.e.ag.drv [DRV] WRITE addr=41c data=0
+# UVM_INFO driver.sv(58) @ 405: uvm_test_top.e.ag.drv [DRV] READ addr=41c data=0
+# UVM_INFO monitor.sv(53) @ 405: uvm_test_top.e.ag.mon [MON]  READ addr=41c data=0
+# UVM_INFO monitor.sv(37) @ 425: uvm_test_top.e.ag.mon [MON]  WRITE addr=420 data=0
+# UVM_INFO driver.sv(45) @ 425: uvm_test_top.e.ag.drv [DRV] WRITE addr=420 data=0
+# UVM_INFO driver.sv(58) @ 455: uvm_test_top.e.ag.drv [DRV] READ addr=420 data=0
+# UVM_INFO monitor.sv(53) @ 455: uvm_test_top.e.ag.mon [MON]  READ addr=420 data=0
+# UVM_INFO monitor.sv(37) @ 475: uvm_test_top.e.ag.mon [MON]  WRITE addr=424 data=0
+# UVM_INFO driver.sv(45) @ 475: uvm_test_top.e.ag.drv [DRV] WRITE addr=424 data=0
+# UVM_INFO driver.sv(58) @ 505: uvm_test_top.e.ag.drv [DRV] READ addr=424 data=0
+# UVM_INFO monitor.sv(53) @ 505: uvm_test_top.e.ag.mon [MON]  READ addr=424 data=0
+# UVM_INFO top_reg_seq.sv(125) @ 505: uvm_test_top.e.ag.seqr@@seq.rst_seq [reset_check_seq] 
+# 
+# ----------------------RESET CHECK ENDED ---------------------------------------
+# 
+# 
+# UVM_INFO top_reg_seq.sv(146) @ 505: uvm_test_top.e.ag.seqr@@seq.intr_seq [intr_seq] 
+# 
+# ================ INTR REGISTER CHECK START ================
+# 
+# 
+# UVM_INFO monitor.sv(37) @ 525: uvm_test_top.e.ag.mon [MON]  WRITE addr=400 data=897cc273
+# UVM_INFO driver.sv(45) @ 525: uvm_test_top.e.ag.drv [DRV] WRITE addr=400 data=897cc273
+# UVM_INFO top_reg_seq.sv(158) @ 525: uvm_test_top.e.ag.seqr@@seq.intr_seq [intr_seq] WRITE | WDATA=0x897cc273 DESIRED=0x897c0000,  MIRRORED=0x897c0000
+# UVM_INFO driver.sv(58) @ 555: uvm_test_top.e.ag.drv [DRV] READ addr=400 data=897c0000
+# UVM_INFO monitor.sv(53) @ 555: uvm_test_top.e.ag.mon [MON]  READ addr=400 data=897c0000
+# UVM_INFO top_reg_seq.sv(164) @ 555: uvm_test_top.e.ag.seqr@@seq.intr_seq [intr_seq] READ  | DUT=0x897c0000 DESIRED=0x897c0000,  MIRRORED=0x897c0000
+# UVM_INFO top_reg_seq.sv(171) @ 555: uvm_test_top.e.ag.seqr@@seq.intr_seq [intr_seq] 
+# 
+# ================ INTR REGISTER CHECK END =================
+# 
+# 
+# UVM_INFO top_reg_seq.sv(192) @ 555: uvm_test_top.e.ag.seqr@@seq.ctrl_seq [ctrl_seq] 
+# 
+# ================ CTRL REGISTER CHECK START ================
+# 
+# 
+# UVM_INFO monitor.sv(37) @ 575: uvm_test_top.e.ag.mon [MON]  WRITE addr=40c data=671e2b35
+# UVM_INFO driver.sv(45) @ 575: uvm_test_top.e.ag.drv [DRV] WRITE addr=40c data=671e2b35
+# UVM_INFO top_reg_seq.sv(210) @ 575: uvm_test_top.e.ag.seqr@@seq.ctrl_seq [ctrl_seq] WRITE | WDATA=0x671e2b35 DESIRED=0x671e2b35,  MIRRORED=0x671e2b35
+# UVM_INFO driver.sv(58) @ 605: uvm_test_top.e.ag.drv [DRV] READ addr=40c data=671e2b35
+# UVM_INFO monitor.sv(53) @ 605: uvm_test_top.e.ag.mon [MON]  READ addr=40c data=671e2b35
+# UVM_INFO top_reg_seq.sv(216) @ 605: uvm_test_top.e.ag.seqr@@seq.ctrl_seq [ctrl_seq] READ  | DUT=0x671e2b35 DESIRED=0x671e2b35,  MIRRORED=0x671e2b35
+# UVM_INFO top_reg_seq.sv(222) @ 605: uvm_test_top.e.ag.seqr@@seq.ctrl_seq [ctrl_seq] 
+# ______________________________________________________________________
+# 
+# UVM_INFO monitor.sv(37) @ 625: uvm_test_top.e.ag.mon [MON]  WRITE addr=40c data=a83a6bc6
+# UVM_INFO driver.sv(45) @ 625: uvm_test_top.e.ag.drv [DRV] WRITE addr=40c data=a83a6bc6
+# UVM_INFO top_reg_seq.sv(210) @ 625: uvm_test_top.e.ag.seqr@@seq.ctrl_seq [ctrl_seq] WRITE | WDATA=0xa83a6bc6 DESIRED=0xa83a6bc6,  MIRRORED=0xa83a6bc6
+# UVM_INFO driver.sv(58) @ 655: uvm_test_top.e.ag.drv [DRV] READ addr=40c data=a83a6bc6
+# UVM_INFO monitor.sv(53) @ 655: uvm_test_top.e.ag.mon [MON]  READ addr=40c data=a83a6bc6
+# UVM_INFO top_reg_seq.sv(216) @ 655: uvm_test_top.e.ag.seqr@@seq.ctrl_seq [ctrl_seq] READ  | DUT=0xa83a6bc6 DESIRED=0xa83a6bc6,  MIRRORED=0xa83a6bc6
+# UVM_INFO top_reg_seq.sv(222) @ 655: uvm_test_top.e.ag.seqr@@seq.ctrl_seq [ctrl_seq] 
+# ______________________________________________________________________
+# 
+# UVM_INFO monitor.sv(37) @ 675: uvm_test_top.e.ag.mon [MON]  WRITE addr=40c data=a45fc244
+# UVM_INFO driver.sv(45) @ 675: uvm_test_top.e.ag.drv [DRV] WRITE addr=40c data=a45fc244
+# UVM_INFO top_reg_seq.sv(210) @ 675: uvm_test_top.e.ag.seqr@@seq.ctrl_seq [ctrl_seq] WRITE | WDATA=0xa45fc244 DESIRED=0xa45fc244,  MIRRORED=0xa45fc244
+# UVM_INFO driver.sv(58) @ 705: uvm_test_top.e.ag.drv [DRV] READ addr=40c data=a45fc244
+# UVM_INFO monitor.sv(53) @ 705: uvm_test_top.e.ag.mon [MON]  READ addr=40c data=a45fc244
+# UVM_INFO top_reg_seq.sv(216) @ 705: uvm_test_top.e.ag.seqr@@seq.ctrl_seq [ctrl_seq] READ  | DUT=0xa45fc244 DESIRED=0xa45fc244,  MIRRORED=0xa45fc244
+# UVM_INFO top_reg_seq.sv(222) @ 705: uvm_test_top.e.ag.seqr@@seq.ctrl_seq [ctrl_seq] 
+# ______________________________________________________________________
+# 
+# UVM_INFO monitor.sv(37) @ 725: uvm_test_top.e.ag.mon [MON]  WRITE addr=40c data=16edf884
+# UVM_INFO driver.sv(45) @ 725: uvm_test_top.e.ag.drv [DRV] WRITE addr=40c data=16edf884
+# UVM_INFO top_reg_seq.sv(210) @ 725: uvm_test_top.e.ag.seqr@@seq.ctrl_seq [ctrl_seq] WRITE | WDATA=0x16edf884 DESIRED=0x16edf884,  MIRRORED=0x16edf884
+# UVM_INFO driver.sv(58) @ 755: uvm_test_top.e.ag.drv [DRV] READ addr=40c data=16edf884
+# UVM_INFO monitor.sv(53) @ 755: uvm_test_top.e.ag.mon [MON]  READ addr=40c data=16edf884
+# UVM_INFO top_reg_seq.sv(216) @ 755: uvm_test_top.e.ag.seqr@@seq.ctrl_seq [ctrl_seq] READ  | DUT=0x16edf884 DESIRED=0x16edf884,  MIRRORED=0x16edf884
+# UVM_INFO top_reg_seq.sv(222) @ 755: uvm_test_top.e.ag.seqr@@seq.ctrl_seq [ctrl_seq] 
+# ______________________________________________________________________
+# 
+# UVM_INFO monitor.sv(37) @ 775: uvm_test_top.e.ag.mon [MON]  WRITE addr=40c data=1020a01a
+# UVM_INFO driver.sv(45) @ 775: uvm_test_top.e.ag.drv [DRV] WRITE addr=40c data=1020a01a
+# UVM_INFO top_reg_seq.sv(210) @ 775: uvm_test_top.e.ag.seqr@@seq.ctrl_seq [ctrl_seq] WRITE | WDATA=0x1020a01a DESIRED=0x1020a01a,  MIRRORED=0x1020a01a
+# UVM_INFO driver.sv(58) @ 805: uvm_test_top.e.ag.drv [DRV] READ addr=40c data=1020a01a
+# UVM_INFO monitor.sv(53) @ 805: uvm_test_top.e.ag.mon [MON]  READ addr=40c data=1020a01a
+# UVM_INFO top_reg_seq.sv(216) @ 805: uvm_test_top.e.ag.seqr@@seq.ctrl_seq [ctrl_seq] READ  | DUT=0x1020a01a DESIRED=0x1020a01a,  MIRRORED=0x1020a01a
+# UVM_INFO top_reg_seq.sv(222) @ 805: uvm_test_top.e.ag.seqr@@seq.ctrl_seq [ctrl_seq] 
+# ______________________________________________________________________
+# 
+# UVM_INFO top_reg_seq.sv(226) @ 805: uvm_test_top.e.ag.seqr@@seq.ctrl_seq [ctrl_seq] 
+#  FRONTDOOR WRITE AND BACKDOOR READ 
+# 
+# UVM_INFO monitor.sv(37) @ 825: uvm_test_top.e.ag.mon [MON]  WRITE addr=408 data=ffffabcd
+# UVM_INFO driver.sv(45) @ 825: uvm_test_top.e.ag.drv [DRV] WRITE addr=408 data=ffffabcd
+# UVM_INFO top_reg_seq.sv(233) @ 825: uvm_test_top.e.ag.seqr@@seq.ctrl_seq [ctrl_seq] WRITE | WDATA=0xffffabcd DESIRED=0xffffabcd,  MIRRORED=0xffffabcd
+# UVM_INFO top_reg_seq.sv(240) @ 840: uvm_test_top.e.ag.seqr@@seq.ctrl_seq [ctrl_seq] READ  | DUT=0xffffabcd DESIRED=0xffffabcd,  MIRRORED=0xffffabcd
+# UVM_INFO top_reg_seq.sv(247) @ 840: uvm_test_top.e.ag.seqr@@seq.ctrl_seq [ctrl_seq] 
+# 
+# ================ CTRL REGISTER CHECK END =================
+# 
+# 
+# UVM_INFO top_reg_seq.sv(267) @ 840: uvm_test_top.e.ag.seqr@@seq.io_addr_seq [io_addr_seq] 
+# 
+# ================ IO_ADDR REGISTER CHECK START ================
+# 
+# 
+# UVM_INFO monitor.sv(37) @ 855: uvm_test_top.e.ag.mon [MON]  WRITE addr=40c data=a9399ccc
+# UVM_INFO driver.sv(45) @ 855: uvm_test_top.e.ag.drv [DRV] WRITE addr=40c data=a9399ccc
+# UVM_INFO top_reg_seq.sv(283) @ 855: uvm_test_top.e.ag.seqr@@seq.io_addr_seq [io_addr_seq] WRITE | WDATA=0xa9399ccc DESIRED=0xa9399ccc,  MIRRORED=0xa9399ccc
+# UVM_INFO driver.sv(58) @ 885: uvm_test_top.e.ag.drv [DRV] READ addr=40c data=a9399ccc
+# UVM_INFO monitor.sv(53) @ 885: uvm_test_top.e.ag.mon [MON]  READ addr=40c data=a9399ccc
+# UVM_INFO top_reg_seq.sv(289) @ 885: uvm_test_top.e.ag.seqr@@seq.io_addr_seq [io_addr_seq] READ  | DUT=0xa9399ccc DESIRED=0xa9399ccc,  MIRRORED=0xa9399ccc
+# UVM_INFO top_reg_seq.sv(295) @ 885: uvm_test_top.e.ag.seqr@@seq.io_addr_seq [io_addr_seq] 
+# ______________________________________________________________________
+# 
+# UVM_INFO monitor.sv(37) @ 905: uvm_test_top.e.ag.mon [MON]  WRITE addr=40c data=211c73c4
+# UVM_INFO driver.sv(45) @ 905: uvm_test_top.e.ag.drv [DRV] WRITE addr=40c data=211c73c4
+# UVM_INFO top_reg_seq.sv(283) @ 905: uvm_test_top.e.ag.seqr@@seq.io_addr_seq [io_addr_seq] WRITE | WDATA=0x211c73c4 DESIRED=0x211c73c4,  MIRRORED=0x211c73c4
+# UVM_INFO driver.sv(58) @ 935: uvm_test_top.e.ag.drv [DRV] READ addr=40c data=211c73c4
+# UVM_INFO monitor.sv(53) @ 935: uvm_test_top.e.ag.mon [MON]  READ addr=40c data=211c73c4
+# UVM_INFO top_reg_seq.sv(289) @ 935: uvm_test_top.e.ag.seqr@@seq.io_addr_seq [io_addr_seq] READ  | DUT=0x211c73c4 DESIRED=0x211c73c4,  MIRRORED=0x211c73c4
+# UVM_INFO top_reg_seq.sv(295) @ 935: uvm_test_top.e.ag.seqr@@seq.io_addr_seq [io_addr_seq] 
+# ______________________________________________________________________
+# 
+# UVM_INFO monitor.sv(37) @ 955: uvm_test_top.e.ag.mon [MON]  WRITE addr=40c data=da884b09
+# UVM_INFO driver.sv(45) @ 955: uvm_test_top.e.ag.drv [DRV] WRITE addr=40c data=da884b09
+# UVM_INFO top_reg_seq.sv(283) @ 955: uvm_test_top.e.ag.seqr@@seq.io_addr_seq [io_addr_seq] WRITE | WDATA=0xda884b09 DESIRED=0xda884b09,  MIRRORED=0xda884b09
+# UVM_INFO driver.sv(58) @ 985: uvm_test_top.e.ag.drv [DRV] READ addr=40c data=da884b09
+# UVM_INFO monitor.sv(53) @ 985: uvm_test_top.e.ag.mon [MON]  READ addr=40c data=da884b09
+# UVM_INFO top_reg_seq.sv(289) @ 985: uvm_test_top.e.ag.seqr@@seq.io_addr_seq [io_addr_seq] READ  | DUT=0xda884b09 DESIRED=0xda884b09,  MIRRORED=0xda884b09
+# UVM_INFO top_reg_seq.sv(295) @ 985: uvm_test_top.e.ag.seqr@@seq.io_addr_seq [io_addr_seq] 
+# ______________________________________________________________________
+# 
+# UVM_INFO monitor.sv(37) @ 1005: uvm_test_top.e.ag.mon [MON]  WRITE addr=40c data=b8fe944
+# UVM_INFO driver.sv(45) @ 1005: uvm_test_top.e.ag.drv [DRV] WRITE addr=40c data=b8fe944
+# UVM_INFO top_reg_seq.sv(283) @ 1005: uvm_test_top.e.ag.seqr@@seq.io_addr_seq [io_addr_seq] WRITE | WDATA=0x0b8fe944 DESIRED=0x0b8fe944,  MIRRORED=0x0b8fe944
+# UVM_INFO driver.sv(58) @ 1035: uvm_test_top.e.ag.drv [DRV] READ addr=40c data=b8fe944
+# UVM_INFO monitor.sv(53) @ 1035: uvm_test_top.e.ag.mon [MON]  READ addr=40c data=b8fe944
+# UVM_INFO top_reg_seq.sv(289) @ 1035: uvm_test_top.e.ag.seqr@@seq.io_addr_seq [io_addr_seq] READ  | DUT=0x0b8fe944 DESIRED=0x0b8fe944,  MIRRORED=0x0b8fe944
+# UVM_INFO top_reg_seq.sv(295) @ 1035: uvm_test_top.e.ag.seqr@@seq.io_addr_seq [io_addr_seq] 
+# ______________________________________________________________________
+# 
+# UVM_INFO monitor.sv(37) @ 1055: uvm_test_top.e.ag.mon [MON]  WRITE addr=40c data=f92b65cc
+# UVM_INFO driver.sv(45) @ 1055: uvm_test_top.e.ag.drv [DRV] WRITE addr=40c data=f92b65cc
+# UVM_INFO top_reg_seq.sv(283) @ 1055: uvm_test_top.e.ag.seqr@@seq.io_addr_seq [io_addr_seq] WRITE | WDATA=0xf92b65cc DESIRED=0xf92b65cc,  MIRRORED=0xf92b65cc
+# UVM_INFO driver.sv(58) @ 1085: uvm_test_top.e.ag.drv [DRV] READ addr=40c data=f92b65cc
+# UVM_INFO monitor.sv(53) @ 1085: uvm_test_top.e.ag.mon [MON]  READ addr=40c data=f92b65cc
+# UVM_INFO top_reg_seq.sv(289) @ 1085: uvm_test_top.e.ag.seqr@@seq.io_addr_seq [io_addr_seq] READ  | DUT=0xf92b65cc DESIRED=0xf92b65cc,  MIRRORED=0xf92b65cc
+# UVM_INFO top_reg_seq.sv(295) @ 1085: uvm_test_top.e.ag.seqr@@seq.io_addr_seq [io_addr_seq] 
+# ______________________________________________________________________
+# 
+# UVM_INFO top_reg_seq.sv(299) @ 1085: uvm_test_top.e.ag.seqr@@seq.io_addr_seq [io_addr_seq] 
+#  BACKDOOR WRITE AND FRONT DOOR READ 
+# 
+# UVM_INFO top_reg_seq.sv(306) @ 1085: uvm_test_top.e.ag.seqr@@seq.io_addr_seq [io_addr_seq] WRITE | WDATA=0xffff0000 DESIRED=0xffff0000,  MIRRORED=0xffff0000
+# UVM_INFO driver.sv(58) @ 1115: uvm_test_top.e.ag.drv [DRV] READ addr=408 data=ffff0000
+# UVM_INFO monitor.sv(53) @ 1115: uvm_test_top.e.ag.mon [MON]  READ addr=408 data=ffff0000
+# UVM_INFO top_reg_seq.sv(313) @ 1115: uvm_test_top.e.ag.seqr@@seq.io_addr_seq [io_addr_seq] READ  | DUT=0xffff0000 DESIRED=0xffff0000,  MIRRORED=0xffff0000
+# UVM_INFO top_reg_seq.sv(320) @ 1115: uvm_test_top.e.ag.seqr@@seq.io_addr_seq [io_addr_seq] 
+# 
+# ================ IO_ADDR REGISTER CHECK END =================
+# 
+# 
+# UVM_INFO top_reg_seq.sv(340) @ 1115: uvm_test_top.e.ag.seqr@@seq.mem_addr_seq [mem_addr_seq] 
+# 
+# ================ MEM_ADDR REGISTER CHECK START ================
+# 
+# 
+# UVM_INFO monitor.sv(37) @ 1135: uvm_test_top.e.ag.mon [MON]  WRITE addr=40c data=36e4191a
+# UVM_INFO driver.sv(45) @ 1135: uvm_test_top.e.ag.drv [DRV] WRITE addr=40c data=36e4191a
+# UVM_INFO top_reg_seq.sv(355) @ 1135: uvm_test_top.e.ag.seqr@@seq.mem_addr_seq [mem_addr_seq] WRITE | WDATA=0x36e4191a DESIRED=0x36e4191a,  MIRRORED=0x36e4191a
+# UVM_INFO driver.sv(58) @ 1165: uvm_test_top.e.ag.drv [DRV] READ addr=40c data=36e4191a
+# UVM_INFO monitor.sv(53) @ 1165: uvm_test_top.e.ag.mon [MON]  READ addr=40c data=36e4191a
+# UVM_INFO top_reg_seq.sv(361) @ 1165: uvm_test_top.e.ag.seqr@@seq.mem_addr_seq [mem_addr_seq] READ  | DUT=0x36e4191a DESIRED=0x36e4191a,  MIRRORED=0x36e4191a
+# UVM_INFO top_reg_seq.sv(367) @ 1165: uvm_test_top.e.ag.seqr@@seq.mem_addr_seq [mem_addr_seq] 
+# ______________________________________________________________________
+# 
+# UVM_INFO monitor.sv(37) @ 1185: uvm_test_top.e.ag.mon [MON]  WRITE addr=40c data=b0ac7b75
+# UVM_INFO driver.sv(45) @ 1185: uvm_test_top.e.ag.drv [DRV] WRITE addr=40c data=b0ac7b75
+# UVM_INFO top_reg_seq.sv(355) @ 1185: uvm_test_top.e.ag.seqr@@seq.mem_addr_seq [mem_addr_seq] WRITE | WDATA=0xb0ac7b75 DESIRED=0xb0ac7b75,  MIRRORED=0xb0ac7b75
+# UVM_INFO driver.sv(58) @ 1215: uvm_test_top.e.ag.drv [DRV] READ addr=40c data=b0ac7b75
+# UVM_INFO monitor.sv(53) @ 1215: uvm_test_top.e.ag.mon [MON]  READ addr=40c data=b0ac7b75
+# UVM_INFO top_reg_seq.sv(361) @ 1215: uvm_test_top.e.ag.seqr@@seq.mem_addr_seq [mem_addr_seq] READ  | DUT=0xb0ac7b75 DESIRED=0xb0ac7b75,  MIRRORED=0xb0ac7b75
+# UVM_INFO top_reg_seq.sv(367) @ 1215: uvm_test_top.e.ag.seqr@@seq.mem_addr_seq [mem_addr_seq] 
+# ______________________________________________________________________
+# 
+# UVM_INFO monitor.sv(37) @ 1235: uvm_test_top.e.ag.mon [MON]  WRITE addr=40c data=258a78d0
+# UVM_INFO driver.sv(45) @ 1235: uvm_test_top.e.ag.drv [DRV] WRITE addr=40c data=258a78d0
+# UVM_INFO top_reg_seq.sv(355) @ 1235: uvm_test_top.e.ag.seqr@@seq.mem_addr_seq [mem_addr_seq] WRITE | WDATA=0x258a78d0 DESIRED=0x258a78d0,  MIRRORED=0x258a78d0
+# UVM_INFO driver.sv(58) @ 1265: uvm_test_top.e.ag.drv [DRV] READ addr=40c data=258a78d0
+# UVM_INFO monitor.sv(53) @ 1265: uvm_test_top.e.ag.mon [MON]  READ addr=40c data=258a78d0
+# UVM_INFO top_reg_seq.sv(361) @ 1265: uvm_test_top.e.ag.seqr@@seq.mem_addr_seq [mem_addr_seq] READ  | DUT=0x258a78d0 DESIRED=0x258a78d0,  MIRRORED=0x258a78d0
+# UVM_INFO top_reg_seq.sv(367) @ 1265: uvm_test_top.e.ag.seqr@@seq.mem_addr_seq [mem_addr_seq] 
+# ______________________________________________________________________
+# 
+# UVM_INFO monitor.sv(37) @ 1285: uvm_test_top.e.ag.mon [MON]  WRITE addr=40c data=eaf12598
+# UVM_INFO driver.sv(45) @ 1285: uvm_test_top.e.ag.drv [DRV] WRITE addr=40c data=eaf12598
+# UVM_INFO top_reg_seq.sv(355) @ 1285: uvm_test_top.e.ag.seqr@@seq.mem_addr_seq [mem_addr_seq] WRITE | WDATA=0xeaf12598 DESIRED=0xeaf12598,  MIRRORED=0xeaf12598
+# UVM_INFO driver.sv(58) @ 1315: uvm_test_top.e.ag.drv [DRV] READ addr=40c data=eaf12598
+# UVM_INFO monitor.sv(53) @ 1315: uvm_test_top.e.ag.mon [MON]  READ addr=40c data=eaf12598
+# UVM_INFO top_reg_seq.sv(361) @ 1315: uvm_test_top.e.ag.seqr@@seq.mem_addr_seq [mem_addr_seq] READ  | DUT=0xeaf12598 DESIRED=0xeaf12598,  MIRRORED=0xeaf12598
+# UVM_INFO top_reg_seq.sv(367) @ 1315: uvm_test_top.e.ag.seqr@@seq.mem_addr_seq [mem_addr_seq] 
+# ______________________________________________________________________
+# 
+# UVM_INFO monitor.sv(37) @ 1335: uvm_test_top.e.ag.mon [MON]  WRITE addr=40c data=2fe7c7f5
+# UVM_INFO driver.sv(45) @ 1335: uvm_test_top.e.ag.drv [DRV] WRITE addr=40c data=2fe7c7f5
+# UVM_INFO top_reg_seq.sv(355) @ 1335: uvm_test_top.e.ag.seqr@@seq.mem_addr_seq [mem_addr_seq] WRITE | WDATA=0x2fe7c7f5 DESIRED=0x2fe7c7f5,  MIRRORED=0x2fe7c7f5
+# UVM_INFO driver.sv(58) @ 1365: uvm_test_top.e.ag.drv [DRV] READ addr=40c data=2fe7c7f5
+# UVM_INFO monitor.sv(53) @ 1365: uvm_test_top.e.ag.mon [MON]  READ addr=40c data=2fe7c7f5
+# UVM_INFO top_reg_seq.sv(361) @ 1365: uvm_test_top.e.ag.seqr@@seq.mem_addr_seq [mem_addr_seq] READ  | DUT=0x2fe7c7f5 DESIRED=0x2fe7c7f5,  MIRRORED=0x2fe7c7f5
+# UVM_INFO top_reg_seq.sv(367) @ 1365: uvm_test_top.e.ag.seqr@@seq.mem_addr_seq [mem_addr_seq] 
+# ______________________________________________________________________
+# 
+# UVM_INFO top_reg_seq.sv(371) @ 1365: uvm_test_top.e.ag.seqr@@seq.mem_addr_seq [mem_addr_seq] 
+# 
+# ================ MEM_ADDR REGISTER CHECK END =================
+# 
+# 
+# UVM_INFO top_reg_seq.sv(389) @ 1365: uvm_test_top.e.ag.seqr@@seq.extra_info_seq [extra_info_seq] 
+# 
+# ================ EXTRA_INFO REGISTER CHECK START ================
+# 
+# 
+# UVM_INFO monitor.sv(37) @ 1385: uvm_test_top.e.ag.mon [MON]  WRITE addr=410 data=dc0325dc
+# UVM_INFO driver.sv(45) @ 1385: uvm_test_top.e.ag.drv [DRV] WRITE addr=410 data=dc0325dc
+# UVM_INFO top_reg_seq.sv(400) @ 1385: uvm_test_top.e.ag.seqr@@seq.extra_info_seq [extra_info_seq] WRITE | WDATA=0xdc0325dc DESIRED=0xdc0325dc,  MIRRORED=0xdc0325dc
+# UVM_INFO driver.sv(58) @ 1415: uvm_test_top.e.ag.drv [DRV] READ addr=410 data=dc0325dc
+# UVM_INFO monitor.sv(53) @ 1415: uvm_test_top.e.ag.mon [MON]  READ addr=410 data=dc0325dc
+# UVM_INFO top_reg_seq.sv(406) @ 1415: uvm_test_top.e.ag.seqr@@seq.extra_info_seq [extra_info_seq] READ  | DUT=0xdc0325dc DESIRED=0xdc0325dc,  MIRRORED=0xdc0325dc
+# UVM_INFO top_reg_seq.sv(413) @ 1415: uvm_test_top.e.ag.seqr@@seq.extra_info_seq [extra_info_seq] 
+# 
+# ================ EXTRA_INFO REGISTER CHECK END =================
+# 
+# 
+# UVM_INFO top_reg_seq.sv(432) @ 1415: uvm_test_top.e.ag.seqr@@seq.status_seq [status_seq] 
+# 
+# ================ STATUS REGISTER CHECK START ================
+# 
+# 
+# UVM_INFO monitor.sv(37) @ 1435: uvm_test_top.e.ag.mon [MON]  WRITE addr=414 data=a7029197
+# UVM_INFO driver.sv(45) @ 1435: uvm_test_top.e.ag.drv [DRV] WRITE addr=414 data=a7029197
+# UVM_INFO top_reg_seq.sv(449) @ 1435: uvm_test_top.e.ag.seqr@@seq.status_seq [status_seq] WRITE | WDATA=0xa7029197 DESIRED=0x00000000,  MIRRORED=0x00000000
+# UVM_INFO driver.sv(58) @ 1465: uvm_test_top.e.ag.drv [DRV] READ addr=414 data=0
+# UVM_INFO monitor.sv(53) @ 1465: uvm_test_top.e.ag.mon [MON]  READ addr=414 data=0
+# UVM_INFO top_reg_seq.sv(455) @ 1465: uvm_test_top.e.ag.seqr@@seq.status_seq [status_seq] READ  | DUT=0x00000000 DESIRED=0x00000000,  MIRRORED=0x00000000
+# UVM_INFO top_reg_seq.sv(462) @ 1465: uvm_test_top.e.ag.seqr@@seq.status_seq [status_seq] 
+# 
+# ================ STATUS REGISTER CHECK END =================
+# 
+# 
+# UVM_INFO top_reg_seq.sv(481) @ 1465: uvm_test_top.e.ag.seqr@@seq.transfer_count_seq [transfer_count_seq] 
+# 
+# ================ TRANSFER_COUNT REGISTER CHECK START ================
+# 
+# 
+# UVM_INFO monitor.sv(37) @ 1485: uvm_test_top.e.ag.mon [MON]  WRITE addr=418 data=fe4eaab8
+# UVM_INFO driver.sv(45) @ 1485: uvm_test_top.e.ag.drv [DRV] WRITE addr=418 data=fe4eaab8
+# UVM_INFO top_reg_seq.sv(492) @ 1485: uvm_test_top.e.ag.seqr@@seq.transfer_count_seq [transfer_count_seq] WRITE | WDATA=0xfe4eaab8 DESIRED=0x00000000,  MIRRORED=0x00000000
+# UVM_INFO driver.sv(58) @ 1515: uvm_test_top.e.ag.drv [DRV] READ addr=418 data=0
+# UVM_INFO monitor.sv(53) @ 1515: uvm_test_top.e.ag.mon [MON]  READ addr=418 data=0
+# UVM_INFO top_reg_seq.sv(498) @ 1515: uvm_test_top.e.ag.seqr@@seq.transfer_count_seq [transfer_count_seq] READ  | DUT=0x00000000 DESIRED=0x00000000,  MIRRORED=0x00000000
+# UVM_INFO top_reg_seq.sv(505) @ 1515: uvm_test_top.e.ag.seqr@@seq.transfer_count_seq [transfer_count_seq] 
+# 
+# ================ TRANSFER_COUNT REGISTER CHECK END =================
+# 
+# 
+# UVM_INFO top_reg_seq.sv(525) @ 1515: uvm_test_top.e.ag.seqr@@seq.descriptor_addr_seq [descriptor_addr_seq] 
+# 
+# ================ DESCRIPTOR_ADDR REGISTER CHECK START ================
+# 
+# 
+# UVM_INFO monitor.sv(37) @ 1535: uvm_test_top.e.ag.mon [MON]  WRITE addr=41c data=31fc736d
+# UVM_INFO driver.sv(45) @ 1535: uvm_test_top.e.ag.drv [DRV] WRITE addr=41c data=31fc736d
+# UVM_INFO top_reg_seq.sv(536) @ 1535: uvm_test_top.e.ag.seqr@@seq.descriptor_addr_seq [descriptor_addr_seq] WRITE | WDATA=0x31fc736d DESIRED=0x31fc736d,  MIRRORED=0x31fc736d
+# UVM_INFO driver.sv(58) @ 1565: uvm_test_top.e.ag.drv [DRV] READ addr=41c data=31fc736d
+# UVM_INFO monitor.sv(53) @ 1565: uvm_test_top.e.ag.mon [MON]  READ addr=41c data=31fc736d
+# UVM_INFO top_reg_seq.sv(542) @ 1565: uvm_test_top.e.ag.seqr@@seq.descriptor_addr_seq [descriptor_addr_seq] READ  | DUT=0x31fc736d DESIRED=0x31fc736d,  MIRRORED=0x31fc736d
+# UVM_INFO top_reg_seq.sv(549) @ 1565: uvm_test_top.e.ag.seqr@@seq.descriptor_addr_seq [descriptor_addr_seq] 
+# 
+# ================ DESCRIPTOR_ADDR REGISTER CHECK END =================
+# 
+# 
+# UVM_INFO top_reg_seq.sv(569) @ 1565: uvm_test_top.e.ag.seqr@@seq.error_status_seq [error_status_seq] 
+# 
+# ================ ERROR_STATUS REGISTER CHECK START ================
+# 
+# 
+# UVM_INFO monitor.sv(37) @ 1585: uvm_test_top.e.ag.mon [MON]  WRITE addr=420 data=4d866b4
+# UVM_INFO driver.sv(45) @ 1585: uvm_test_top.e.ag.drv [DRV] WRITE addr=420 data=4d866b4
+# UVM_INFO top_reg_seq.sv(587) @ 1585: uvm_test_top.e.ag.seqr@@seq.error_status_seq [error_status_seq] WRITE | WDATA=0x04d866b4 DESIRED=0x00000000,  MIRRORED=0x00000000
+# UVM_INFO driver.sv(58) @ 1615: uvm_test_top.e.ag.drv [DRV] READ addr=420 data=0
+# UVM_INFO monitor.sv(53) @ 1615: uvm_test_top.e.ag.mon [MON]  READ addr=420 data=0
+# UVM_INFO top_reg_seq.sv(593) @ 1615: uvm_test_top.e.ag.seqr@@seq.error_status_seq [error_status_seq] READ  | DUT=0x00000000 DESIRED=0x00000000,  MIRRORED=0x00000000
+# UVM_INFO top_reg_seq.sv(600) @ 1615: uvm_test_top.e.ag.seqr@@seq.error_status_seq [error_status_seq] 
+# 
+# ================ ERROR_STATUS REGISTER CHECK END =================
+# 
+# 
+# UVM_INFO top_reg_seq.sv(620) @ 1615: uvm_test_top.e.ag.seqr@@seq.config_seq [config_seq] 
+# 
+# ================ CONFIG REGISTER CHECK START ================
+# 
+# 
+# UVM_INFO monitor.sv(37) @ 1635: uvm_test_top.e.ag.mon [MON]  WRITE addr=424 data=508401ce
+# UVM_INFO driver.sv(45) @ 1635: uvm_test_top.e.ag.drv [DRV] WRITE addr=424 data=508401ce
+# UVM_INFO top_reg_seq.sv(637) @ 1635: uvm_test_top.e.ag.seqr@@seq.config_seq [config_seq] WRITE | WDATA=0x508401ce DESIRED=0x0000014e,  MIRRORED=0x0000014e
+# UVM_INFO driver.sv(58) @ 1665: uvm_test_top.e.ag.drv [DRV] READ addr=424 data=1ce
+# UVM_INFO monitor.sv(53) @ 1665: uvm_test_top.e.ag.mon [MON]  READ addr=424 data=1ce
+# UVM_INFO top_reg_seq.sv(643) @ 1665: uvm_test_top.e.ag.seqr@@seq.config_seq [config_seq] READ  | DUT=0x000001ce DESIRED=0x0000014e,  MIRRORED=0x0000014e
+# UVM_INFO top_reg_seq.sv(650) @ 1665: uvm_test_top.e.ag.seqr@@seq.config_seq [config_seq] 
+# 
+# ================ CONFIG REGISTER CHECK END =================
+# 
+# 
+# UVM_INFO verilog_src/uvm-1.1d/src/base/uvm_objection.svh(1268) @ 1685: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :  221
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [DRV]    65
+# [MON]    64
+# [Questa UVM]     2
+# [RNTST]     1
+# [TEST_DONE]     1
+# [config_seq]     4
+# [ctrl_seq]    20
+# [descriptor_addr_seq]     4
+# [error_status_seq]     4
+# [extra_info_seq]     4
+# [intr_seq]     4
+# [io_addr_seq]    20
+# [mem_addr_seq]    17
+# [regression_seq]     1
+# [reset_check_seq]     2
+# [status_seq]     4
+# [transfer_count_seq]     4
+# ** Note: $finish    : /tools/mentor/questasim_10.6c/questasim/linux/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 1685 ns  Iteration: 53  Instance: /tb_top
+# End time: 11:55:31 on Jan 28,2026, Elapsed time: 0:00:03
+# Errors: 0, Warnings: 12
