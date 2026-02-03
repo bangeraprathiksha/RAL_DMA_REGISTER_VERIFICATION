@@ -29,6 +29,9 @@ package ral_pkg;
   //agent
   `include "agent.sv"
 
+  //subscriber
+  `include "subscriber.sv"
+
   // environment
   `include "env.sv"
 

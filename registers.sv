@@ -783,11 +783,11 @@ class CONFIG extends uvm_reg;
                                                 .individually_accessible(1));
 
                  data_width.configure(          .parent(this),
-                                                .size(1),
+                                                .size(2),
                                                 .lsb_pos(6),
                                                 .access("RW"),
                                                 .volatile(0),
-                                                .reset(0),
+                                                .reset(2'b00),
                                                 .has_reset(1),
                                                 .is_rand(1),
                                                 .individually_accessible(1));

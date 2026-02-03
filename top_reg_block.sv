@@ -71,11 +71,46 @@ class top_reg_block extends uvm_reg_block;
                 configg.build();
                 configg.configure(this);
                 configg.set_coverage(UVM_CVR_FIELD_VALS);
-          	
-
-
+          
+	    	intr.add_hdl_path_slice("intr_status", 0, 16);
+    		intr.add_hdl_path_slice("intr_mask", 16, 16);	
+	
+		ctrl.add_hdl_path_slice("ctrl_start_dma",0, 1);
+		ctrl.add_hdl_path_slice("ctrl_w_count",1, 15);
+		ctrl.add_hdl_path_slice("ctrl_io_mem",16, 1);
+		
 		io_addr.add_hdl_path_slice("io_addr",0, 32);
-        
+
+		mem_addr.add_hdl_path_slice("mem_addr",0,32);
+
+		extra_info.add_hdl_path_slice("extra_info",0,32);			
+ 
+		status.add_hdl_path_slice("status_busy", 0, 1);
+		status.add_hdl_path_slice("status_done", 1, 1);
+		status.add_hdl_path_slice("status_error", 2, 1);
+		status.add_hdl_path_slice("status_paused", 3, 1);
+    		status.add_hdl_path_slice("status_current_state", 4, 4);
+    		status.add_hdl_path_slice("status_fifo_level", 8, 8);
+    		
+		transfer_count.add_hdl_path_slice("transfer_count", 0, 32);
+
+		descriptor_addr.add_hdl_path_slice("descriptor_addr",0,32);
+
+		error_status.add_hdl_path_slice("error_bus",0,1);
+                error_status.add_hdl_path_slice("error_timeout",1,1);
+		error_status.add_hdl_path_slice("error_alignment",2,1);
+		error_status.add_hdl_path_slice("error_overflow",3,1);
+		error_status.add_hdl_path_slice("error_underflow",4,1);
+		error_status.add_hdl_path_slice("error_addr_offset",16,16);
+                error_status.add_hdl_path_slice("error_code",8,8);
+	
+                configg.add_hdl_path_slice("config_priority",0,2);
+                configg.add_hdl_path_slice("config_auto_restart",2,1);
+                configg.add_hdl_path_slice("config_interrupt_enable",3,1);
+                configg.add_hdl_path_slice("config_burst_size",4,2);
+                configg.add_hdl_path_slice("config_data_width",6,2);
+                configg.add_hdl_path_slice("config_descriptor_mode",8,1);
+
 	        default_map = create_map("default_map",'h0,4,UVM_LITTLE_ENDIAN);
 
                 default_map.add_reg(intr,32'h400,"RW");

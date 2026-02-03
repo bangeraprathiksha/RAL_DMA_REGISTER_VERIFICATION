@@ -1,7 +1,7 @@
 class env extends uvm_env;
 
         `uvm_component_utils(env)
-
+	subscriber s;
         agent ag;
         top_reg_block regmodel;
         top_adapter adapter_inst;
@@ -20,6 +20,7 @@ class env extends uvm_env;
 		regmodel.set_hdl_path_root("tb_top.dut");
                 regmodel.build();
                 adapter_inst = top_adapter::type_id::create("adapter_inst",this);
+		s = subscriber::type_id::create("s",this);
         endfunction
 
         function void connect_phase(uvm_phase phase);
@@ -35,6 +36,7 @@ class env extends uvm_env;
           ag.mon.ap_mon.connect(predictor_inst.bus_in);
 
                 regmodel.default_map.set_auto_predict(0);
+		ag.mon.ap_mon.connect(s.subscrb_port);
         endfunction
 endclass
 
